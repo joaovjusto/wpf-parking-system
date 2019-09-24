@@ -1,0 +1,9 @@
+﻿<Application x:Class="SistemaEstacionamento.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SistemaEstacionamento"
+             StartupUri="./Views/Principal.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
