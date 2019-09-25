@@ -12,8 +12,8 @@
                 <MenuItem Header="_Sair" HorizontalAlignment="Left" Height="35" Width="140"  Click="MenuItem_Click"  />
             </MenuItem>
             <MenuItem Header="_Cadastrar" Height="35" Width="100">
-                <MenuItem Header="Produto" HorizontalAlignment="Left" Height="35" Width="140"  Click="MenuItem_Click_1"/>
-                <MenuItem Header="_Venda" HorizontalAlignment="Left" Height="35" Width="140"  Click="MenuItem_Click_2"/>
+                <MenuItem Header="Cadastro de Usuário" Height="35"  Click="MenuItem_Click_1"/>
+                <MenuItem Header="_Venda" HorizontalAlignment="Left" Height="35" Width="189"  Click="MenuItem_Click_2" Margin="0,0,-49,0"/>
             </MenuItem>
         </Menu>
 
