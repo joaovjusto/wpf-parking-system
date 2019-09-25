@@ -8,8 +8,8 @@ namespace SistemaEstacionamento.Model
 {
     public class User
     {
-        public string name { get; set; }
-        public Int32 Idade { get; set; }
+        public string nome { get; set; }
+        public Int32 idade { get; set; }
         public string senha { get; set; }
         public string usuario { get; set; }
     }

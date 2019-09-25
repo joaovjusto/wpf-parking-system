@@ -18,11 +18,11 @@ using SistemaEstacionamento.Model;
 namespace SistemaEstacionamento.Views
 {
     /// <summary>
-    /// Interaction logic for Principal.xaml
+    /// Interaction logic for TelaPrincipal.xaml
     /// </summary>
-    public partial class Principal : Window
+    public partial class TelaPrincipal : Window
     {
-        public Principal()
+        public TelaPrincipal()
         {
             InitializeComponent();
         }
@@ -55,15 +55,29 @@ namespace SistemaEstacionamento.Views
 
                 var firebaseClient = new FirebaseClient("https://parking-sharp.firebaseio.com/");
 
-                 await firebaseClient
-                  .Child("usuarios")
-                  .PostAsync(new User());
+                var user1 = new User
+                {
+                    nome = "João Justo",
+                    idade = 20,
+                    senha = "DASDAs34234fedf234",
+                    usuario = "jvjusto"
+                };
 
-                var users = await firebaseClient.Child("usuarios").OrderByKey().OnceAsync<User>();
+                //await firebaseClient
+                // .Child("usuarios")
+                //.PostAsync(user1);
+
+                // await firebaseClient
+                //.Child("usuarios")
+                //.DeleteAsync();
+
+                //var users = await firebaseClient.Child("usuarios").OrderByKey().OnceAsync<User>();
+
+                var users = await firebaseClient.Child("usuarios").OrderByKey().EqualTo("-LpaAP22-_YfzY_t1c4a").OnceAsync<User>();
 
                 foreach (var user in users)
                 {
-                    Console.WriteLine($"{user.Object.Idade}");
+                    Console.WriteLine($"{user.Object.nome}");
                 }
             }
         }
