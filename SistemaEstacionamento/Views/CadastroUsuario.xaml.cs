@@ -11,24 +11,55 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SistemaEstacionamento.Model;
+using SistemaEstacionamento.DAL;
 
 namespace SistemaEstacionamento.Views
 {
-    /// <summary>
-    /// Lógica interna para CadastroUsuario.xaml
-    /// </summary>
+
     public partial class CadastroUsuario : Window
     {
         public CadastroUsuario()
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void LimparFormulario()
         {
-
+            usuario.Clear();
+            senha.Clear();
+            idade.Clear();
+            nome.Clear();
         }
 
+        private async void BtnCadastrarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Cheguei na tela chamei o dal");
+            User u = new User
+            {
+                nome = nome.Text,
+                idade = Convert.ToInt32(idade.Text),
+                senha = senha.Text,
+                usuario = usuario.Text
+            };
+
+            UsuarioDAL userDal = new UsuarioDAL();
+
+            var cadastroUser = await userDal.CadastrarUsuario(u);
+
+            if (cadastroUser)
+            {
+                MessageBox.Show("Usuário cadastrado com sucesso!",
+                    "Sistema de estacionamento", MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+                LimparFormulario();
+            }
+            else
+            {
+                MessageBox.Show("Esse Usuário já existe!",
+                    "WPF Vendas", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+        }
         private void Usuario_TextChanged(object sender, TextChangedEventArgs e)
         {
 

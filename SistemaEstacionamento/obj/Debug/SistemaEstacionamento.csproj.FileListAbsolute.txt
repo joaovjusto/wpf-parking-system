@@ -17,11 +17,6 @@ C:\Users\João Justo\Desktop\SistemaEstacionamento\SistemaEstacionamento\obj\Deb
 C:\Users\João Justo\Desktop\SistemaEstacionamento\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csproj.CopyComplete
 C:\Users\João Justo\Desktop\SistemaEstacionamento\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.exe
 C:\Users\João Justo\Desktop\SistemaEstacionamento\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.pdb
-C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csprojAssemblyReference.cache
-C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\CadastroUsuario.g.cs
-C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\App.g.cs
-C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento_MarkupCompile.cache
-C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento_MarkupCompile.lref
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\bin\Debug\SistemaEstacionamento.exe.config
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\bin\Debug\SistemaEstacionamento.exe
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\bin\Debug\SistemaEstacionamento.pdb
@@ -36,7 +31,11 @@ C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\bin\
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\bin\Debug\LiteDB.xml
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\bin\Debug\Newtonsoft.Json.xml
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\bin\Debug\System.Reactive.xml
+C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\CadastroUsuario.g.cs
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\TelaPrincipal.g.cs
+C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\App.g.cs
+C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento_MarkupCompile.cache
+C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento_MarkupCompile.lref
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\CadastroUsuario.baml
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\TelaPrincipal.baml
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.g.resources
@@ -46,3 +45,4 @@ C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csproj.CopyComplete
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.exe
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.pdb
+C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csprojAssemblyReference.cache

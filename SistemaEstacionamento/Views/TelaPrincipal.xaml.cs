@@ -17,9 +17,6 @@ using SistemaEstacionamento.Model;
 
 namespace SistemaEstacionamento.Views
 {
-    /// <summary>
-    /// Interaction logic for TelaPrincipal.xaml
-    /// </summary>
     public partial class TelaPrincipal : Window
     {
         public TelaPrincipal()
@@ -47,39 +44,6 @@ namespace SistemaEstacionamento.Views
             CadastroUsuario c = new CadastroUsuario();
             c.ShowDialog();
 
-            GetUser();
-
-            async Task GetUser()
-            {
-                Console.WriteLine("Cheguei aki");
-
-                var firebaseClient = new FirebaseClient("https://parking-sharp.firebaseio.com/");
-
-                var user1 = new User
-                {
-                    nome = "João Justo",
-                    idade = 20,
-                    senha = "DASDAs34234fedf234",
-                    usuario = "jvjusto"
-                };
-
-                //await firebaseClient
-                // .Child("usuarios")
-                //.PostAsync(user1);
-
-                // await firebaseClient
-                //.Child("usuarios")
-                //.DeleteAsync();
-
-                //var users = await firebaseClient.Child("usuarios").OrderByKey().OnceAsync<User>();
-
-                var users = await firebaseClient.Child("usuarios").OrderByKey().EqualTo("-LpaAP22-_YfzY_t1c4a").OnceAsync<User>();
-
-                foreach (var user in users)
-                {
-                    Console.WriteLine($"{user.Object.nome}");
-                }
-            }
         }
 
 
