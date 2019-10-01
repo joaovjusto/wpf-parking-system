@@ -17,11 +17,11 @@ using SistemaEstacionamento.DAL;
 namespace SistemaEstacionamento.Views
 {
     /// <summary>
-    /// Lógica interna para CadastroEstada.xaml
+    /// Lógica interna para CadastroArea.xaml
     /// </summary>
-    public partial class CadastroEstada : Window
+    public partial class CadastroArea : Window
     {
-        public CadastroEstada()
+        public CadastroArea()
         {
             InitializeComponent();
         }
@@ -36,33 +36,29 @@ namespace SistemaEstacionamento.Views
 
         }
 
-        private async void BtnCadastrarEstada_Click(object sender, RoutedEventArgs e)
+        private async void BtnCadastrarArea_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("Cheguei na tela chamei o dal");
-            Estada u = new Estada
+            AreaEstacionamento u = new AreaEstacionamento
             {
-                entrada = Convert.ToDateTime(entrada.Text),
-                saida = Convert.ToDateTime(saida.Text),
-                tipo = tipo.Text,
-                vaga = Convert.ToInt32(vaga.Text),
-                area = area.Text,
-                usuario = usuario.Text
+                nome = nome.Text,
+                qtdeVagas = Convert.ToInt32(vagas.Text),
             };
 
-            EstadaDAL estadaDal = new EstadaDAL();
+            AreaEstacionamentoDAL areaDal = new AreaEstacionamentoDAL();
 
-            var cadastroEstada = await estadaDal.CadastrarEstada(u);
+            var cadastroEstada = await areaDal.CadastrarArea(u);
 
             if (cadastroEstada)
             {
-                MessageBox.Show("Estada cadastrada com sucesso!",
+                MessageBox.Show("Area cadastrada com sucesso!",
                     "Sistema de estacionamento", MessageBoxButton.OK,
                     MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show("Essa Estada já existe!",
-                    "WPF Vendas", MessageBoxButton.OK,
+                MessageBox.Show("Essa Area já existe!",
+                    "Sistema Estacionamento", MessageBoxButton.OK,
                     MessageBoxImage.Error);
             }
         }

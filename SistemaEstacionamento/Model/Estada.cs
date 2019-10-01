@@ -10,6 +10,8 @@ namespace SistemaEstacionamento.Model
     {
         public DateTime entrada { get; set; }
         public DateTime saida { get; set; }
+        public Int32 vaga { get; set; }
+        public String area { get; set; }
         public String tipo { get; set; }
         public String usuario { get; set; }
 

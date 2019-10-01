@@ -52,5 +52,11 @@ namespace SistemaEstacionamento.Views
             CadastroEstada c = new CadastroEstada();
             c.ShowDialog();
         }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            CadastroArea c = new CadastroArea();
+            c.ShowDialog();
+        }
     }
 }

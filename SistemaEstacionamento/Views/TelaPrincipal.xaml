@@ -14,6 +14,7 @@
             <MenuItem Header="_Cadastrar" Height="35" Width="100">
                 <MenuItem Header="Cadastro de Usuário" Height="35"  Click="MenuItem_Click_1"/>
                 <MenuItem Header="Cadastro de Estada" HorizontalAlignment="Left" Height="35" Width="189"  Click="MenuItem_Click_2" Margin="0,0,-49,0"/>
+                <MenuItem Header="Cadastro de Area Estacionamento" HorizontalAlignment="Left" Height="35" Width="189"  Click="MenuItem_Click_3" Margin="0,0,-49,0"/>
             </MenuItem>
         </Menu>
 
