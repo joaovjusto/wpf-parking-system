@@ -49,9 +49,8 @@ namespace SistemaEstacionamento.Views
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
-            //frmCadastrarVenda f =
-            //    new frmCadastrarVenda();
-            //f.ShowDialog();
+            CadastroEstada c = new CadastroEstada();
+            c.ShowDialog();
         }
     }
 }

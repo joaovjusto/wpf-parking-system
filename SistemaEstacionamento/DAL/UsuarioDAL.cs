@@ -13,7 +13,7 @@ namespace SistemaEstacionamento.DAL
     {
         public async Task<bool> BuscarUsuarioPorNome(User u)
         {
-            Console.WriteLine("Cheguei no buscausuario");
+            Console.WriteLine("Cheguei no busca usuario");
 
             var firebaseClient = new FirebaseClient("https://parking-sharp.firebaseio.com/");
 
@@ -25,7 +25,7 @@ namespace SistemaEstacionamento.DAL
             {
                 Console.WriteLine($"{user.Object.nome}");
 
-                if (u.nome == user.Object.nome) {
+                if (u.usuario == user.Object.usuario) {
                     return false;
                 }
             }
