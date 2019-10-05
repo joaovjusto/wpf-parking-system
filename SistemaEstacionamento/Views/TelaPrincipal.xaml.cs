@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SistemaEstacionamento.Model;
+using SistemaEstacionamento.DAL;
 
 namespace SistemaEstacionamento.Views
 {
@@ -57,6 +58,15 @@ namespace SistemaEstacionamento.Views
         {
             CadastroArea c = new CadastroArea();
             c.ShowDialog();
+        }
+
+        private async void ListaEstadas_Loaded(object sender, RoutedEventArgs e)
+        {
+            EstadaDAL estadaDAL = new EstadaDAL();
+
+            List<Estada> estadas = await estadaDAL.BuscaTodasEstadas();
+
+            listaEstadas.ItemsSource = estadas;
         }
     }
 }

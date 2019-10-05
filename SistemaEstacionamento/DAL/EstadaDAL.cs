@@ -53,5 +53,30 @@ namespace SistemaEstacionamento.DAL
                 return false;
             }
         }
+
+        public async Task<List<Estada>> BuscaTodasEstadas()
+        {
+            Console.WriteLine("Cheguei no busca todas estadas");
+
+            var firebaseClient = new FirebaseClient("https://parking-sharp.firebaseio.com/");
+
+            var estadas = await firebaseClient.Child("estadas").OrderByKey().OnceAsync<Estada>();
+
+            List<Estada> items = new List<Estada>();
+
+            foreach (var estada in estadas)
+            {
+                items.Add(new Estada() {
+                    entrada = estada.Object.entrada,
+                    saida = estada.Object.saida,
+                    vaga = estada.Object.vaga,
+                    area = estada.Object.area,
+                    tipo = estada.Object.tipo,
+                    usuario = estada.Object.usuario
+                });
+            }
+
+            return items;
+        }
     }
 }

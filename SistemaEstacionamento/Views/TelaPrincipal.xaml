@@ -17,6 +17,18 @@
                 <MenuItem Header="Cadastro de Area Estacionamento" HorizontalAlignment="Left" Height="35" Width="189"  Click="MenuItem_Click_3" Margin="0,0,-49,0"/>
             </MenuItem>
         </Menu>
+        <ListView Margin="0,40,0,10" Name="listaEstadas" Loaded="ListaEstadas_Loaded">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Data Entrada" Width="120" DisplayMemberBinding="{Binding entrada}" />
+                    <GridViewColumn Header="Data Saída" Width="100" DisplayMemberBinding="{Binding saida}" />
+                    <GridViewColumn Header="Vaga" Width="150" DisplayMemberBinding="{Binding vaga}" />
+                    <GridViewColumn Header="Área" Width="150" DisplayMemberBinding="{Binding area}" />
+                    <GridViewColumn Header="Tipo" Width="150" DisplayMemberBinding="{Binding tipo}" />
+                    <GridViewColumn Header="Usuário" Width="150" DisplayMemberBinding="{Binding usuario}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>
