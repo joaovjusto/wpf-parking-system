@@ -33,15 +33,19 @@ namespace SistemaEstacionamento.Views
 
         private async void BtnCadastrarEstada_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Cheguei na tela chamei o dal"); 
+            Console.WriteLine(usuarios.SelectedItem.ToString());
+
+            var b = (User)usuarios.SelectedItem;
+            var c = (AreaEstacionamento)areas.SelectedItem;
+
             Estada u = new Estada
             {
                 entrada = Convert.ToDateTime(entrada.Text),
                 saida = Convert.ToDateTime(saida.Text),
                 tipo = tipo.Text,
                 vaga = Convert.ToInt32(vaga.Text),
-                area = areas.Text,
-                usuario = usuarios.Text
+                area = c.nome,
+                usuario = b.usuario
             };
 
             EstadaDAL estadaDal = new EstadaDAL();

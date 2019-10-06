@@ -32,7 +32,30 @@ namespace SistemaEstacionamento.DAL
 
             return true;
         }
-        
+
+        public async Task<bool> BuscarPorLogin(User u)
+        {
+            Console.WriteLine("Cheguei no busca usuario");
+
+            var firebaseClient = new FirebaseClient("https://parking-sharp.firebaseio.com/");
+
+            var users = await firebaseClient.Child("usuarios").OrderByKey().OnceAsync<User>();
+
+            Console.WriteLine($"{u.nome}");
+
+            foreach (var user in users)
+            {
+                Console.WriteLine($"{user.Object.nome}");
+
+                if (u.usuario == user.Object.usuario && u.senha == user.Object.senha)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public async Task<bool> CadastrarUsuario(User u)
         {
             if (await BuscarUsuarioPorNome(u))

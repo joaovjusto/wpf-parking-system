@@ -68,7 +68,7 @@ namespace SistemaEstacionamento.Views
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)
         {
-            CadastroArea c = new CadastroArea();
+            DeletarEstada c = new DeletarEstada();
             c.ShowDialog();
         }
 

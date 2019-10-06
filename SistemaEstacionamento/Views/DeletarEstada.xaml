@@ -1,0 +1,23 @@
+﻿<Window x:Class="SistemaEstacionamento.Views.DeletarEstada"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemaEstacionamento.Views"
+        mc:Ignorable="d"
+        Title="DeletarEstada" Height="145.227" Width="330.5" Background="#FF5D5D5D">
+
+    <Grid HorizontalAlignment="Left" Height="227" Margin="0,-26,0,-3" VerticalAlignment="Top" Width="320">
+        <Button x:Name="btnCadastrarEstada" Content="Apagar" HorizontalAlignment="Left" Margin="121,109,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.55,2.369" Click="BtnCadastrarEstada_Click"/>
+        <ComboBox Name="estadas" Margin="82,65,70,137" Loaded="Estadas_Loaded">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding usuario}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Selecione a Estada desejada" HorizontalAlignment="Left" Margin="76,34,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
