@@ -1,0 +1,53 @@
+﻿<Window x:Class="SistemaEstacionamento.Views.AlterarEstada"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemaEstacionamento.Views"
+        mc:Ignorable="d"
+        Title="AlterarEstada" Height="460.455" Width="330.5" Background="#FF5D5D5D">
+
+    <Grid HorizontalAlignment="Left" Height="227" Margin="0,-26,0,-3" VerticalAlignment="Top" Width="320">
+        <ComboBox HorizontalAlignment="Left" x:Name="tipo" Margin="82,230,0,-25" VerticalAlignment="Top" Width="168" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Vip"></ComboBoxItem>
+            <ComboBoxItem Content="Normal"></ComboBoxItem>
+        </ComboBox>
+        <DatePicker HorizontalAlignment="Left" Name="entrada" Margin="82,121,0,0" VerticalAlignment="Top" Width="168"/>
+        <Button x:Name="btnCadastrarEstada" Content="Cadastrar" HorizontalAlignment="Left" Margin="120,416,0,-209" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.55,2.369" Click="BtnCadastrarEstada_Click"/>
+        <DatePicker HorizontalAlignment="Left" Name="saida" Margin="82,176,0,0" VerticalAlignment="Top" Width="168"/>
+        <Label Content="Entrada" HorizontalAlignment="Left" Margin="76,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="Saida" HorizontalAlignment="Left" Margin="76,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tipo (Vip ou normal)" HorizontalAlignment="Left" Margin="76,205,0,-4" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="82,316,0,-112" TextWrapping="Wrap" Text="Vaga" x:Name="vaga" VerticalAlignment="Top" Width="168"/>
+        <ComboBox Name="areas" Margin="82,375,70,-173" Loaded="Areas_Loaded">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding nome}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="usuarios" Margin="82,283,70,-81" Loaded="Usuarios_Loaded">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding usuario}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="estadas" Margin="82,65,70,137" Loaded="Estadas_Loaded">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding usuario}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Área&#xD;&#xA;" HorizontalAlignment="Left" Margin="82,344,0,-143" VerticalAlignment="Top"/>
+        <Label Content="Selecione a Estada desejada" HorizontalAlignment="Left" Margin="76,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Usuário" HorizontalAlignment="Left" Margin="81,257,0,-56" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

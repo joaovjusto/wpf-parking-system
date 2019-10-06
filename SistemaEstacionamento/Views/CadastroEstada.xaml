@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SistemaEstacionamento.Views"
         mc:Ignorable="d"
-        Title="CadastroEstada" Height="326.8" Width="330.5" Background="#FF5D5D5D">
+        Title="CadastroEstada" Height="400.8" Width="330.5" Background="#FF5D5D5D">
 
     <Grid HorizontalAlignment="Left" Height="227" Margin="0,-26,0,-3" VerticalAlignment="Top" Width="320">
         <ComboBox HorizontalAlignment="Left" x:Name="tipo" Margin="67,160,0,0" VerticalAlignment="Top" Width="168" SelectionChanged="ComboBox_SelectionChanged">
@@ -13,13 +13,31 @@
             <ComboBoxItem Content="Normal"></ComboBoxItem>
         </ComboBox>
         <DatePicker HorizontalAlignment="Left" Name="entrada" Margin="67,51,0,0" VerticalAlignment="Top" Width="168"/>
-        <Button x:Name="btnCadastrarEstada" Content="Cadastrar" HorizontalAlignment="Left" Margin="113,295,0,-88" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.55,2.369" Click="BtnCadastrarEstada_Click"/>
+        <Button x:Name="btnCadastrarEstada" Content="Cadastrar" HorizontalAlignment="Left" Margin="117,346,0,-139" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.55,2.369" Click="BtnCadastrarEstada_Click"/>
         <DatePicker HorizontalAlignment="Left" Name="saida" Margin="67,106,0,0" VerticalAlignment="Top" Width="168"/>
         <Label Content="Entrada" HorizontalAlignment="Left" Margin="61,25,0,0" VerticalAlignment="Top"/>
         <Label Content="Saida" HorizontalAlignment="Left" Margin="61,80,0,0" VerticalAlignment="Top"/>
         <Label Content="Tipo (Vip ou normal)" HorizontalAlignment="Left" Margin="61,135,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="67,194,0,0" TextWrapping="Wrap" Text="Usuário" x:Name="usuario" VerticalAlignment="Top" Width="168"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="67,222,0,-18" TextWrapping="Wrap" Text="Vaga" x:Name="vaga" VerticalAlignment="Top" Width="168"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="67,250,0,-46" TextWrapping="Wrap" Text="Área" x:Name="area" VerticalAlignment="Top" Width="168"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="67,246,0,-42" TextWrapping="Wrap" Text="Vaga" x:Name="vaga" VerticalAlignment="Top" Width="168"/>
+        <ComboBox Name="areas" Margin="67,305,85,-103" Loaded="Areas_Loaded">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding nome}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="usuarios" Margin="67,216,85,-14" Loaded="Usuarios_Loaded">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding usuario}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Área&#xD;&#xA;" HorizontalAlignment="Left" Margin="67,274,0,-73" VerticalAlignment="Top"/>
+        <Label Content="Usuário" HorizontalAlignment="Left" Margin="66,187,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

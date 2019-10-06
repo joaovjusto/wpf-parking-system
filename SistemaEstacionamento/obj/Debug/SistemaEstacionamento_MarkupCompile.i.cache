@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\App.xaml
-4-996506152
+5-1218829386
 
-15-692202530
+16374749195
 23767496973
-Views\CadastroArea.xaml;Views\CadastroEstada.xaml;Views\CadastroUsuario.xaml;Views\TelaPrincipal.xaml;
+Views\AlterarEstada.xaml;Views\CadastroArea.xaml;Views\CadastroEstada.xaml;Views\CadastroUsuario.xaml;Views\TelaPrincipal.xaml;
 
 True
 

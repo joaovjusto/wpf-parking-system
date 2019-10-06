@@ -60,7 +60,28 @@ namespace SistemaEstacionamento.Views
             c.ShowDialog();
         }
 
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+            AlterarEstada c = new AlterarEstada();
+            c.ShowDialog();
+        }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
+        {
+            CadastroArea c = new CadastroArea();
+            c.ShowDialog();
+        }
+
         private async void ListaEstadas_Loaded(object sender, RoutedEventArgs e)
+        {
+            EstadaDAL estadaDAL = new EstadaDAL();
+
+            List<Estada> estadas = await estadaDAL.BuscaTodasEstadas();
+
+            listaEstadas.ItemsSource = estadas;
+        }
+
+        private async void ListaEstadas_MouseEnter(object sender, MouseEventArgs e)
         {
             EstadaDAL estadaDAL = new EstadaDAL();
 

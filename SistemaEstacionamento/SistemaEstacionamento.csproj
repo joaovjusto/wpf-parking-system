@@ -107,6 +107,9 @@
     <Compile Include="Model\AreaEstacionamento.cs" />
     <Compile Include="Model\Estada.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Views\AlterarEstada.xaml.cs">
+      <DependentUpon>AlterarEstada.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CadastroArea.xaml.cs">
       <DependentUpon>CadastroArea.xaml</DependentUpon>
     </Compile>
@@ -160,6 +163,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\AlterarEstada.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\CadastroArea.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

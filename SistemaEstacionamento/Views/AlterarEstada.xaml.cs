@@ -19,9 +19,9 @@ namespace SistemaEstacionamento.Views
     /// <summary>
     /// Lógica interna para CadastroEstada.xaml
     /// </summary>
-    public partial class CadastroEstada : Window
+    public partial class AlterarEstada : Window
     {
-        public CadastroEstada()
+        public AlterarEstada()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace SistemaEstacionamento.Views
 
         private async void BtnCadastrarEstada_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Cheguei na tela chamei o dal"); 
+            Console.WriteLine("Cheguei na tela chamei o dal");
             Estada u = new Estada
             {
                 entrada = Convert.ToDateTime(entrada.Text),
@@ -41,22 +41,22 @@ namespace SistemaEstacionamento.Views
                 tipo = tipo.Text,
                 vaga = Convert.ToInt32(vaga.Text),
                 area = areas.Text,
-                usuario = usuarios.Text
+                usuario = estadas.Text
             };
 
             EstadaDAL estadaDal = new EstadaDAL();
 
-            var cadastroEstada = await estadaDal.CadastrarEstada(u);
+            var cadastroEstada = await estadaDal.AlterarEstada(u);
 
             if (cadastroEstada)
             {
-                MessageBox.Show("Estada cadastrada com sucesso!",
+                MessageBox.Show("Estada alterada com sucesso!",
                     "Sistema de estacionamento", MessageBoxButton.OK,
                     MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show("Essa Estada já existe!",
+                MessageBox.Show("Erro desconhecido!!!",
                     "WPF Vendas", MessageBoxButton.OK,
                     MessageBoxImage.Error);
             }
@@ -69,6 +69,15 @@ namespace SistemaEstacionamento.Views
             List<AreaEstacionamento> areasEstacionamento = await areaDAL.BuscaTodasAreas();
 
             areas.ItemsSource = areasEstacionamento;
+        }
+
+        private async void Estadas_Loaded(object sender, RoutedEventArgs e)
+        {
+            EstadaDAL estadaDAL = new EstadaDAL();
+
+            List<Estada> todas = await estadaDAL.BuscaTodasEstadas();
+
+            estadas.ItemsSource = todas;
         }
 
         private async void Usuarios_Loaded(object sender, RoutedEventArgs e)

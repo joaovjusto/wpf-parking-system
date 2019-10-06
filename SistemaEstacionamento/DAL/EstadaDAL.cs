@@ -78,5 +78,32 @@ namespace SistemaEstacionamento.DAL
 
             return items;
         }
+
+        public async Task<bool> AlterarEstada(Estada u)
+        {
+            Console.WriteLine("Cheguei no alterar estada estadas");
+
+            var firebaseClient = new FirebaseClient("https://parking-sharp.firebaseio.com/");
+
+            var estadas = await firebaseClient.Child("estadas").OrderByKey().OnceAsync<Estada>();
+
+            foreach (var estada in estadas)
+            {
+                Console.WriteLine(estada.Object.usuario);
+                Console.WriteLine(u.usuario);
+                if (u.usuario == estada.Object.usuario)
+                {
+                    Console.WriteLine("dasds");
+                    await firebaseClient
+                     .Child("estadas").Child(estada.Key)
+                        .PostAsync(u);
+                    return true;
+                }
+            }
+
+            return false;
+
+
+        }
     }
 }

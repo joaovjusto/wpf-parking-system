@@ -12,12 +12,19 @@
                 <MenuItem Header="_Sair" HorizontalAlignment="Left" Height="35" Width="140"  Click="MenuItem_Click"  />
             </MenuItem>-->
             <MenuItem Header="_Cadastrar" Height="35" Width="100">
-                <MenuItem Header="Cadastro de Usuário" Height="35"  Click="MenuItem_Click_1"/>
-                <MenuItem Header="Cadastro de Estada" HorizontalAlignment="Left" Height="35" Width="189"  Click="MenuItem_Click_2" Margin="0,0,-49,0"/>
-                <MenuItem Header="Cadastro de Area Estacionamento" HorizontalAlignment="Left" Height="35" Width="189"  Click="MenuItem_Click_3" Margin="0,0,-49,0"/>
+                <MenuItem Header="Cadastro de Usuário" Height="35"  Click="MenuItem_Click_1" Margin="0,0,-52,0"/>
+                <MenuItem Header="Cadastro de Estada" HorizontalAlignment="Left" Height="35" Width="238"  Click="MenuItem_Click_2" Margin="0,0,-46,0"/>
+                <MenuItem Header="Cadastro de Area Estacionamento" HorizontalAlignment="Left" Height="35" Width="238"  Click="MenuItem_Click_3" Margin="0,0,-46,0"/>
+            </MenuItem>
+            <MenuItem Header="_Ações" Height="35" Width="100">
+                <!--
+                    <MenuItem Header="Excluir Usuário" Height="35"  Click="MenuItem_Click_1" Margin="0,0,-52,0"/>
+                -->
+                <MenuItem Header="Alterar Estada" HorizontalAlignment="Left" Height="35" Width="238"  Click="MenuItem_Click_4" Margin="0,0,-46,0"/>
+                <MenuItem Header="Fechamento de Estada" HorizontalAlignment="Left" Height="35" Width="238"  Click="MenuItem_Click_5" Margin="0,0,-46,0"/>
             </MenuItem>
         </Menu>
-        <ListView Margin="0,40,0,10" Name="listaEstadas" Loaded="ListaEstadas_Loaded">
+        <ListView Margin="0,40,0,10" Name="listaEstadas" Loaded="ListaEstadas_Loaded" MouseEnter="ListaEstadas_MouseEnter">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Data Entrada" Width="120" DisplayMemberBinding="{Binding entrada}" />

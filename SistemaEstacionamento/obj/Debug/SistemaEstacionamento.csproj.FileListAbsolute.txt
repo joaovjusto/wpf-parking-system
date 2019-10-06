@@ -50,3 +50,5 @@ C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\CadastroEstada.baml
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\CadastroArea.g.cs
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\CadastroArea.baml
+C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\AlterarEstada.g.cs
+C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\AlterarEstada.baml
