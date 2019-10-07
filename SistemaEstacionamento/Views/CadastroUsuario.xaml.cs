@@ -39,7 +39,8 @@ namespace SistemaEstacionamento.Views
                 nome = nome.Text,
                 idade = Convert.ToInt32(idade.Text),
                 senha = senha.Text,
-                usuario = usuario.Text
+                usuario = usuario.Text,
+                tipo = tipo.Text
             };
 
             UsuarioDAL userDal = new UsuarioDAL();

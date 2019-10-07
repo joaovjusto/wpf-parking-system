@@ -31,7 +31,7 @@ namespace SistemaEstacionamento.Views
             User u = new User
             {
                 usuario = usuario.Text,
-                senha = senha.Text
+                senha = senha.Password
             };
 
             UsuarioDAL usuarioDAL = new UsuarioDAL();

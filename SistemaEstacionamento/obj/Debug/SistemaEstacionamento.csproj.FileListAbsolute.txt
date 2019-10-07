@@ -56,3 +56,42 @@ C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\DeletarEstada.baml
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\Login.g.cs
 C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\Views\Login.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\SistemaEstacionamento.exe.config
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\SistemaEstacionamento.exe
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\SistemaEstacionamento.pdb
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\EntityFramework.dll
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\Firebase.dll
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\LiteDB.dll
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\System.Reactive.dll
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\EntityFramework.xml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\LiteDB.xml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\bin\Debug\System.Reactive.xml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csprojAssemblyReference.cache
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\AlterarEstada.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\CadastroArea.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\CadastroEstada.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\CadastroUsuario.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\DeletarEstada.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\Login.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\TelaPrincipal.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\App.g.cs
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento_MarkupCompile.cache
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento_MarkupCompile.lref
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\AlterarEstada.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\CadastroArea.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\CadastroEstada.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\CadastroUsuario.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\DeletarEstada.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\Login.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\Views\TelaPrincipal.baml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.g.resources
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.Properties.Resources.resources
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csproj.GenerateResource.cache
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.csproj.CopyComplete
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.exe
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\SistemaEstacionamento.pdb

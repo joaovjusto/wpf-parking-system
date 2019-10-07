@@ -4,16 +4,16 @@
 exe
 C#
 .cs
-C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\obj\Debug\
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\obj\Debug\
 SistemaEstacionamento
 none
 false
 DEBUG;TRACE
-C:\Users\João Justo\Documents\Git\wpf-parking-system\SistemaEstacionamento\App.xaml
+C:\Users\lucas\Desktop\wpf-parking-system-master\SistemaEstacionamento\App.xaml
 7952954974
 
 17-502211838
-23767496973
+23-477657209
 Views\AlterarEstada.xaml;Views\CadastroArea.xaml;Views\CadastroEstada.xaml;Views\CadastroUsuario.xaml;Views\DeletarEstada.xaml;Views\Login.xaml;Views\TelaPrincipal.xaml;
 
 False

@@ -47,7 +47,7 @@ namespace SistemaEstacionamento.DAL
             {
                 Console.WriteLine($"{user.Object.nome}");
 
-                if (u.usuario == user.Object.usuario && u.senha == user.Object.senha)
+                if (u.usuario == user.Object.usuario && u.senha == user.Object.senha && user.Object.tipo != "Cliente")
                 {
                     return true;
                 }
@@ -63,14 +63,6 @@ namespace SistemaEstacionamento.DAL
                 Console.WriteLine("Cheguei no cadastro");
 
                 var firebaseClient = new FirebaseClient("https://parking-sharp.firebaseio.com/");
-
-                //var user1 = new User
-                //{
-                  //  nome = "João Justo",
-                    //idade = 20,
-                    //senha = "DASDAs34234fedf234",
-                    //usuario = "jvjusto"
-                //};
 
                 await firebaseClient
                  .Child("usuarios")
@@ -94,13 +86,17 @@ namespace SistemaEstacionamento.DAL
 
             foreach (var usuario in usuarios)
             {
-                items.Add(new User()
+                if(usuario.Object.tipo != "Funcionário")
                 {
-                    nome = usuario.Object.nome,
-                    idade = usuario.Object.idade,
-                    senha = usuario.Object.senha,
-                    usuario = usuario.Object.usuario
-                });
+                    items.Add(new User()
+                    {
+                        nome = usuario.Object.nome,
+                        idade = usuario.Object.idade,
+                        senha = usuario.Object.senha,
+                        usuario = usuario.Object.usuario,
+                        tipo = usuario.Object.tipo
+                    });
+                }
             }
 
             return items;
